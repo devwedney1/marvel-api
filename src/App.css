@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-comics {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-comics {
+  width: 90%;
+  padding: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-comics ul li img {
+  border: 1px solid black;
+  height: 90%;
+  border-radius: 15px;
+  cursor: pointer;
+  /* box-shadow: 30px -11px teal; */
+}
+
+.box-comics ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  margin: 10px 9px;
+}
+
+.box-comics  ul li img {
+  width: 250px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.box-input ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 50px auto;
+}
+
+
+.box-input ul li a:nth-child(1) {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 60px;
+  color: #ebebeb;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: red;
+}
+
+.box-input ul li a:nth-child(2) {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 60px;
+  color: #ebebeb;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: red;
+}
+
+.box-input ul li a:nth-child(3) {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 60px;
+  color: #ebebeb;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: red;
+}
+
+.container-comics {
+  background-image: url(./img/fundo.jpeg);
+}
+
+.box-comics ul li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box-comics ul li footer p {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word {
+  width: 200px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  border-radius: 25px;
 }
+
+.word {
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.box-comics ul li footer p {
+  color: black;
+  background-color: rgb(252, 180, 45);
+}
+
+
+
+
+
+
+
+
+
